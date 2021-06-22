@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+     <!-- 1-  jdbc properties -->
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/flyaway_project?useSSL=false</property>
+    <!-- <property name="connection.url">jdbc:mysql://localhost:3306/flyaway?serverTimezone=UTC</property>  -->
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">3306root3306</property>
+    
+    <!-- JDBC connection pool settings -->
+		<property name="connection.pool_size">1</property>
+		
+		<!-- Our SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- Print the sql generated on the console -->
+		<property name="show_sql">true</property>
+		
+		<!-- Set the current session context -->
+		<property name="current_session_context_class">thread</property>
+		<!-- Update the database schema
+		 -->
+		<property name="hbm2dll.auto">create</property>
+		
+		<mapping class="com.flyaway.database.DBBooking"/>
+		<mapping class="com.flyaway.database.DBFlights"/>
+		<mapping class="com.flyaway.database.Admin"/>
+		<mapping class="com.flyaway.database.AirLine"/>
+		<mapping class="com.flyaway.database.City"/>
+    
+    </session-factory>
+</hibernate-configuration>
