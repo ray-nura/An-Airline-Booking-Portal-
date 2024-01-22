@@ -1,24 +1,55 @@
-FlyAway (An Airline Booking Portal)
+# FlyAway - Airline Booking Portal
 
-FlyAway is a ticket-booking portal that lets people book flights on their website.
+FlyAway is a user-friendly ticket-booking portal designed to streamline the flight booking process.
 
-The website has the following features:
+## Features
 
-    ● A search form in the homepage to allow entry of travel details, like the date of travel, source, destination, and the number of persons.
-    ● Based on the travel details entered, it will show the available flights with their ticket prices.
-    ● Once a person selects a flight to book, they will be taken to a register page where they must fill in their personal details. In the next page, they are shown the flight details of the flight that they are booking, and the payment is done via a dummy payment gateway. On completion of the payment, they are shown a confirmation page with the details of the booking.   
- 
+- **Search Form**: A homepage feature allowing users to input travel details such as date, source, destination, and the number of persons.
+- **Flight Listings**: Displays available flights with corresponding ticket prices based on entered travel details.
+- **Booking Process**: Users can select a flight, proceed to a registration page, fill in personal details, and complete payment through a dummy gateway. A confirmation page is displayed upon successful payment.
 
-For the above features to work, there is an admin backend with the following features:
+## Admin Backend
 
-    ● An admin login page where the admin can change the password after login, if he wishes
-    ● A master list of places for source and destination
-    ● A master list of airlines
-    ● A list of flights where each flight has a source, destination, airline, and ticket price
-    
-    I used the following:
+The admin backend includes:
 
-● Eclipse: An IDE to code for the application 
-● Java: A programming language to develop the web pages, databases, and others
-● SQL: To create tables for admin, airlines, and other specifics
-● Maven: To create a web-enabled Maven project
+- **Admin Login**: Secure login with the ability to change passwords.
+- **Master Lists**: Manage master lists of places for source and destination, airlines, and flight details.
+
+## Technologies Used
+
+- **Eclipse**: Integrated Development Environment (IDE) for coding.
+- **Java**: Programming language for web page, database, and application development.
+- **SQL**: Database management for creating tables for admin, airlines, and other specifics.
+- **Maven**: Build automation tool for creating web-enabled Maven projects.
+
+## How to Run
+
+1. Clone the repository.
+2. Open the project in Eclipse.
+3. Build the project using Maven.
+4. Run the application.
+
+Feel free to explore and enhance the FlyAway experience!
+
+## Tools Used
+
+- Eclipse
+- Java
+- SQL
+- Maven
+
+---
+
+
+
+# Customer Page
+![home_page](https://github.com/ray-nura/An-Airline-Booking-Portal-/blob/main/img/1_home_page.jpg)
+# Search Results
+![home_page](https://github.com/ray-nura/An-Airline-Booking-Portal-/blob/main/img/2_result_search.jpg)
+# Payment Page
+![home_page](https://github.com/ray-nura/An-Airline-Booking-Portal-/blob/main/img/4_payment_page.jpg)
+# Flight Details
+![home_page](https://github.com/ray-nura/An-Airline-Booking-Portal-/blob/main/img/5_details_of_the_booking.jpg)
+# Admin Login Page
+![home_page](https://github.com/ray-nura/An-Airline-Booking-Portal-/blob/main/img/6_admin_login_page.jpg)
+
